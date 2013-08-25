@@ -11,3 +11,4 @@ insert into nan.person (
   ,18   -- age - IN int(11)
   ,'1987-09-12'  -- birthdate - IN date
 );
+select name,sex,age,birthdate from nan.person;
