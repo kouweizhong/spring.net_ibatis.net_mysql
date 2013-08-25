@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDao.cs" />
-    <Compile Include="Entity\Number.cs" />
     <Compile Include="Entity\Person.cs" />
     <Compile Include="PersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
