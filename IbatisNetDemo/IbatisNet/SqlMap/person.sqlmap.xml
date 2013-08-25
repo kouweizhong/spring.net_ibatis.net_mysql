@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="IbatisDemo.DemoNumber"
+        xmlns="http://ibatis.apache.org/mapping"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="Person" type="IbatisNet.Entity.Person, IbatisNet"/>
+  </alias>
+
+  <statements>
+    <select id="SelectAllPerson" resultMap="SelectAllPersonResult" >
+      select name,sex,age,birthdate from nan.person;
+    </select>
+  </statements>
+
+  <resultMaps>
+    <resultMap id="SelectAllPersonResult" class="Person">
+      <result column="name" property="Name" dbType="VARCHAR"/>
+      <result column="sex" property="Sex" dbType="CHAR"/>
+      <result column="age" property="Age" dbType="INT"/>
+      <result column="birthdate" property="Birthdate" dbType="DATE"/>
+    </resultMap>
+  </resultMaps>
+
+
+
+</sqlMap>

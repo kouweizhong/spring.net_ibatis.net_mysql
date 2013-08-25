@@ -9,11 +9,11 @@ namespace IbatisNetTest
     
     
     /// <summary>
-    ///这是 NumberServiceTest 的测试类，旨在
-    ///包含所有 NumberServiceTest 单元测试
+    ///这是 PersonServiceTest 的测试类，旨在
+    ///包含所有 PersonServiceTest 单元测试
     ///</summary>
     [TestClass()]
-    public class NumberServiceTest
+    public class PersonServiceTest
     {
 
 
@@ -67,14 +67,14 @@ namespace IbatisNetTest
 
 
         /// <summary>
-        ///QueryAllNumber 的测试
+        ///QueryAllPerson 的测试
         ///</summary>
         [TestMethod()]
-        public void QueryAllNumberTest()
+        public void QueryAllPersonTest()
         {
-            NumberService target = new NumberService(); // TODO: 初始化为适当的值
-            List<Number> actual;
-            actual = target.QueryAllNumber();
+            PersonService target = new PersonService();
+            List<Person> actual;
+            actual = target.QueryAllPerson();
             Assert.AreEqual(1, actual.Count);
         }
     }

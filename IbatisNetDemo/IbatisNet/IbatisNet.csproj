@@ -57,17 +57,17 @@
   <ItemGroup>
     <Compile Include="BaseDao.cs" />
     <Compile Include="Entity\Number.cs" />
-    <Compile Include="NumberService.cs" />
+    <Compile Include="Entity\Person.cs" />
+    <Compile Include="PersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SqlMap\person.sqlmap.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Config\properties.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Content Include="SqlMap\Number.sqlmap.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlScript\MySql\initialize.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Config\providers.config">
