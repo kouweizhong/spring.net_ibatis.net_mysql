@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="IbatisDemo.DemoNumber"
+        xmlns="http://ibatis.apache.org/mapping"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="NUMBERTEST" type="IbatisNet.Entity.Number, IbatisNet"/>
+  </alias>
+
+  <statements>
+    <select id="SelectAll" resultMap="SelectAllResult" >
+      select
+      COLUMN_1,COLUMN_2,COLUMN_3,ID,BLOB1,CLOB1
+      from nan.DEMO_NUMBERTEST
+    </select>
+  </statements>
+
+  <resultMaps>
+    <resultMap id="SelectAllResult" class="NUMBERTEST">
+      <result column="COLUMN_1" property="COLUMN_1" dbType="DECIMAL"/>
+      <result column="COLUMN_2" property="COLUMN_2" dbType="DECIMAL"/>
+      <result column="COLUMN_3" property="COLUMN_3" dbType="DECIMAL"/>
+      <result column="ID" property="ID" dbType="CHAR"/>
+      <result column="BLOB1" property="BLOB1" dbType="BINARY"/>
+      <result column="CLOB1" property="CLOB1" dbType="BLOB"/>
+    </resultMap>
+  </resultMaps>
+
+
+
+</sqlMap>

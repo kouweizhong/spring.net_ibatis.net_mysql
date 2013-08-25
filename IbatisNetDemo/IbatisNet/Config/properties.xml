@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+  <add key="sampleConnectionString"
+     value="Server=localhost;Database=nan;UID=root;PWD=111111;" />
+</settings>
